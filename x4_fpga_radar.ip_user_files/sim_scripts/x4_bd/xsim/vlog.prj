@@ -1,0 +1,31 @@
+verilog xil_defaultlib -i "../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" --include "C:/AMDDesignTools/2025.2/Vivado/data/xilinx_vip/include" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/ec67/hdl" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/9a25/hdl" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/f0b6/hdl/verilog" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/00fe/hdl/verilog" \
+"../../../bd/x4_bd/ip/x4_bd_processing_system7_0_0/sim/x4_bd_processing_system7_0_0.v" \
+"../../../bd/x4_bd/ip/x4_bd_blk_mem_gen_0_0/sim/x4_bd_blk_mem_gen_0_0.v" \
+
+sv xil_defaultlib -i "../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" --include "C:/AMDDesignTools/2025.2/Vivado/data/xilinx_vip/include" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/ec67/hdl" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/9a25/hdl" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/f0b6/hdl/verilog" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/00fe/hdl/verilog" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_2/sim/bd_aabe_s00mmu_0.sv" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_3/sim/bd_aabe_s00tr_0.sv" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_4/sim/bd_aabe_s00sic_0.sv" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_5/sim/bd_aabe_s00a2s_0.sv" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_6/sim/bd_aabe_sarn_0.sv" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_7/sim/bd_aabe_srn_0.sv" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_8/sim/bd_aabe_sawn_0.sv" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_9/sim/bd_aabe_swn_0.sv" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_10/sim/bd_aabe_sbn_0.sv" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_11/sim/bd_aabe_m00s2a_0.sv" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_12/sim/bd_aabe_m00e_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" --include "C:/AMDDesignTools/2025.2/Vivado/data/xilinx_vip/include" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/ec67/hdl" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/9a25/hdl" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/f0b6/hdl/verilog" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/00fe/hdl/verilog" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/sim/bd_aabe.v" \
+
+sv xil_defaultlib -i "../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" --include "C:/AMDDesignTools/2025.2/Vivado/data/xilinx_vip/include" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/ec67/hdl" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/9a25/hdl" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/f0b6/hdl/verilog" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/00fe/hdl/verilog" \
+"../../../bd/x4_bd/ip/x4_bd_axi_smc_0/sim/x4_bd_axi_smc_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" --include "C:/AMDDesignTools/2025.2/Vivado/data/xilinx_vip/include" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/ec67/hdl" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/9a25/hdl" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/f0b6/hdl/verilog" --include "../../../../project_8.gen/sources_1/bd/x4_bd/ipshared/00fe/hdl/verilog" \
+"../../../bd/x4_bd/ip/x4_bd_radar_ctrl_top_0_0/sim/x4_bd_radar_ctrl_top_0_0.v" \
+"../../../bd/x4_bd/sim/x4_bd.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

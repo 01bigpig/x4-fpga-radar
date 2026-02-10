@@ -1,0 +1,1279 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Feb  9 20:21:41 2026
+# Process ID         : 45652
+# Current directory  : C:/Users/17392/x4_fpga_radar/x4_fpga_radar.runs/synth_1
+# Command line       : vivado.exe -log x4_bd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source x4_bd_wrapper.tcl
+# Log file           : C:/Users/17392/x4_fpga_radar/x4_fpga_radar.runs/synth_1/x4_bd_wrapper.vds
+# Journal file       : C:/Users/17392/x4_fpga_radar/x4_fpga_radar.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-MRHU30BR
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 275HX
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 33673 MB
+# Swap memory        : 4563 MB
+# Total Virtual      : 38236 MB
+# Available Virtual  : 17234 MB
+#-----------------------------------------------------------
+source x4_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top x4_bd_wrapper -part xc7z010iclg400-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Device 21-403] Loading part xc7z010iclg400-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 14168
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1314.820 ; gain = 542.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'x4_bd_wrapper' [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/hdl/x4_bd_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'x4_bd' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:13]
+INFO: [Synth 8-638] synthesizing module 'x4_bd_axi_bram_ctrl_0_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_bram_ctrl_0_0/synth/x4_bd_axi_bram_ctrl_0_0.vhd:104]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 4096 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31263' bound to instance 'U0' of component 'axi_bram_ctrl' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_bram_ctrl_0_0/synth/x4_bd_axi_bram_ctrl_0_0.vhd:260]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31434]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30438]
+INFO: [Synth 8-638] synthesizing module 'full_axi' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29196]
+WARNING: [Synth 8-6774] Null subtype or type declaration found [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29266]
+INFO: [Synth 8-3919] null assignment ignored [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29266]
+INFO: [Synth 8-3919] null assignment ignored [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29472]
+INFO: [Synth 8-638] synthesizing module 'sng_port_arb' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11397]
+INFO: [Synth 8-256] done synthesizing module 'sng_port_arb' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11397]
+INFO: [Synth 8-638] synthesizing module 'wr_chnl' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24080]
+INFO: [Synth 8-506] null port 'FaultInjectECC' ignored [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24047]
+INFO: [Synth 8-638] synthesizing module 'wrap_brst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12386]
+INFO: [Synth 8-256] done synthesizing module 'wrap_brst' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12386]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:91]
+INFO: [Synth 8-3491] module 'FDR' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'Data_Exists_DFF' of component 'FDR' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:188]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383]
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:205]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:212]
+INFO: [Synth 8-6157] synthesizing module 'XORCY' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315]
+INFO: [Synth 8-6155] done synthesizing module 'XORCY' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:218]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:205]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:212]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:218]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:205]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:212]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:218]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:205]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:212]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:218]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:229]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'wr_chnl' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24080]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29936]
+INFO: [Synth 8-638] synthesizing module 'rd_chnl' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14672]
+INFO: [Synth 8-256] done synthesizing module 'rd_chnl' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14672]
+INFO: [Synth 8-256] done synthesizing module 'full_axi' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29196]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30438]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31434]
+INFO: [Synth 8-256] done synthesizing module 'x4_bd_axi_bram_ctrl_0_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_bram_ctrl_0_0/synth/x4_bd_axi_bram_ctrl_0_0.vhd:104]
+INFO: [Synth 8-6157] synthesizing module 'x4_bd_axi_smc_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/synth/x4_bd_axi_smc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_12MALFD' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:716]
+INFO: [Synth 8-638] synthesizing module 'bd_aabe_psr_aclk_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_1/synth/bd_aabe_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_1/synth/bd_aabe_psr_aclk_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_EXT' of component 'xpm_cdc_single' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:968]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1015]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'bd_aabe_psr_aclk_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_1/synth/bd_aabe_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_aabe_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:747]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_aabe_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:747]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_aabe_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:747]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_aabe_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:747]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_aabe_psr_aclk_0' has 10 connections declared, but only 6 given [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:747]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_12MALFD' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:716]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_W1PWRM' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:756]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_m00e_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_12/synth/bd_aabe_m00e_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_m00e_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_12/synth/bd_aabe_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_W1PWRM' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:756]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_m00s2a_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_11/synth/bd_aabe_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_m00s2a_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_11/synth/bd_aabe_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_s00a2s_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_5/synth/bd_aabe_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_s00a2s_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_5/synth/bd_aabe_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1URWKKH' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:1054]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_s00mmu_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_2/synth/bd_aabe_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_s00mmu_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_2/synth/bd_aabe_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_s00sic_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_4/synth/bd_aabe_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_s00sic_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_4/synth/bd_aabe_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_s00tr_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_3/synth/bd_aabe_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_s00tr_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_3/synth/bd_aabe_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1URWKKH' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:1054]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1RK1U0R' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:1630]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_sarn_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_6/synth/bd_aabe_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8996]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8996]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_sarn_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_6/synth/bd_aabe_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_sawn_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_8/synth/bd_aabe_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_sawn_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_8/synth/bd_aabe_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_sbn_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_10/synth/bd_aabe_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8996]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (0#1) [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8996]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_sbn_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_10/synth/bd_aabe_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_srn_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_7/synth/bd_aabe_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8996]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized1' (0#1) [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8996]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_srn_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_7/synth/bd_aabe_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_aabe_swn_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_9/synth/bd_aabe_swn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized2' [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8996]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (0#1) [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (0#1) [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8996]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe_swn_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_9/synth/bd_aabe_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1RK1U0R' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:1630]
+INFO: [Synth 8-6155] done synthesizing module 'bd_aabe' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'x4_bd_axi_smc_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/synth/x4_bd_axi_smc_0.v:53]
+WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'x4_bd_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:221]
+WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'x4_bd_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:221]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'x4_bd_axi_smc_0' has 73 connections declared, but only 71 given [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:221]
+INFO: [Synth 8-638] synthesizing module 'x4_bd_blk_mem_gen_0_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_blk_mem_gen_0_0/synth/x4_bd_blk_mem_gen_0_0.vhd:80]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 1 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 1 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: NONE - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 4096 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 4096 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_RSTB bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 4096 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 4096 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 4 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     19.3686 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_12' declared at 'c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/42f3/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195209' bound to instance 'U0' of component 'blk_mem_gen_v8_4_12' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_blk_mem_gen_0_0/synth/x4_bd_blk_mem_gen_0_0.vhd:258]
+INFO: [Synth 8-256] done synthesizing module 'x4_bd_blk_mem_gen_0_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_blk_mem_gen_0_0/synth/x4_bd_blk_mem_gen_0_0.vhd:80]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'x4_bd_blk_mem_gen_0_0' is unconnected for instance 'blk_mem_gen_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:293]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'x4_bd_blk_mem_gen_0_0' is unconnected for instance 'blk_mem_gen_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:293]
+WARNING: [Synth 8-7023] instance 'blk_mem_gen_0' of module 'x4_bd_blk_mem_gen_0_0' has 16 connections declared, but only 14 given [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:293]
+INFO: [Synth 8-6157] synthesizing module 'x4_bd_processing_system7_0_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2325]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2325]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:140294]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:140294]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:442]
+INFO: [Synth 8-6155] done synthesizing module 'x4_bd_processing_system7_0_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/synth/x4_bd_processing_system7_0_0.v:53]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARREADY' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_AWREADY' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_BVALID' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_RLAST' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_RVALID' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_WREADY' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_BRESP' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_RRESP' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_RDATA' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_BID' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_RID' of module 'x4_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'x4_bd_processing_system7_0_0' has 101 connections declared, but only 90 given [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:310]
+INFO: [Synth 8-6157] synthesizing module 'x4_bd_radar_ctrl_top_0_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_radar_ctrl_top_0_0/synth/x4_bd_radar_ctrl_top_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'radar_ctrl_top' [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/new/radar_ctrl_loop.v:21]
+	Parameter CLK_DIV_BURST bound to: 5 - type: integer 
+	Parameter BURST_BYTE_COUNT bound to: 9216 - type: integer 
+	Parameter PIF_RESET_CNTR_ADDR bound to: 8'b00101011 
+	Parameter PIF_TRX_START_ADDR bound to: 8'b00110110 
+	Parameter PIF_DONE_ADDR bound to: 8'b00111010 
+	Parameter PIF_RAMSEL_ADDR bound to: 8'b00100111 
+	Parameter PIF_1D_ADDR bound to: 8'b00011101 
+	Parameter WR_WAIT_CYCLES bound to: 50000 - type: integer 
+	Parameter POLL_TIMEOUT bound to: 5000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'top_x4_pif_init_membridge' [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:48]
+INFO: [Synth 8-6157] synthesizing module 'x4_spi_reg_service' [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/x4_spi_reg_service1.v:12]
+	Parameter CLK_DIV bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'spi_xfer16_mode0' [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/spi_xfer16_mode0_1.v:9]
+	Parameter CLK_DIV bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/spi_xfer16_mode0_1.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'spi_xfer16_mode0' (0#1) [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/spi_xfer16_mode0_1.v:9]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/x4_spi_reg_service1.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'x4_spi_reg_service' (0#1) [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/x4_spi_reg_service1.v:12]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:133]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:146]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:177]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:190]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:203]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:1368]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:220]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:231]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'top_x4_pif_init_membridge' (0#1) [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/top_x4_spi_test.v:48]
+INFO: [Synth 8-6157] synthesizing module 'x4_spi_burst_reader' [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/x4_spi_burst_reader.v:16]
+	Parameter CLK_DIV bound to: 5 - type: integer 
+	Parameter BYTE_COUNT bound to: 9216 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'spi_xfer16_mode0_holdcs' [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/spi_xfer16_mode0_holdcs.v:9]
+	Parameter CLK_DIV bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/spi_xfer16_mode0_holdcs.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'spi_xfer16_mode0_holdcs' (0#1) [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/spi_xfer16_mode0_holdcs.v:9]
+INFO: [Synth 8-226] default block is never used [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/x4_spi_burst_reader.v:225]
+INFO: [Synth 8-6155] done synthesizing module 'x4_spi_burst_reader' (0#1) [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/x4_spi_burst_reader.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'radar_ctrl_top' (0#1) [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/new/radar_ctrl_loop.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'x4_bd_radar_ctrl_top_0_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_radar_ctrl_top_0_0/synth/x4_bd_radar_ctrl_top_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'x4_bd_rst_ps7_0_100M_0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_rst_ps7_0_100M_0/synth/x4_bd_rst_ps7_0_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_rst_ps7_0_100M_0/synth/x4_bd_rst_ps7_0_100M_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset__parameterized1' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf__parameterized0' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_EXT' of component 'xpm_cdc_single' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:968]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1015]
+INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized1' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'x4_bd_rst_ps7_0_100M_0' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_rst_ps7_0_100M_0/synth/x4_bd_rst_ps7_0_100M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'x4_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:414]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'x4_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:414]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'x4_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:414]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'x4_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:414]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'x4_bd_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:414]
+INFO: [Synth 8-6155] done synthesizing module 'x4_bd' (0#1) [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/synth/x4_bd.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'x4_bd_wrapper' (0#1) [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/hdl/x4_bd_wrapper.v:13]
+INFO: [Synth 8-6014] Unused sequential element curr_awsize_reg_reg was removed.  [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:25239]
+INFO: [Synth 8-6014] Unused sequential element curr_awlen_reg_1_or_2_reg was removed.  [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:25517]
+INFO: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_arsize_pipe_max_reg was removed.  [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:15432]
+INFO: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.curr_arsize_reg_reg was removed.  [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:15924]
+INFO: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.no_ar_ack_reg was removed.  [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:19829]
+INFO: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.do_cmplt_burst_reg was removed.  [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ipshared/2f03/hdl/axi_bram_ctrl_v4_1_rfs.vhd:21170]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_12MALFD does not have driver. [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/synth/bd_aabe.v:732]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element lat_addr_reg was removed.  [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/x4_spi_reg_service1.v:80]
+WARNING: [Synth 8-6014] Unused sequential element lat_wdata_reg was removed.  [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/imports/new/x4_spi_reg_service1.v:81]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_burst'. This will prevent further optimization [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/new/radar_ctrl_loop.v:152]
+WARNING: [Synth 8-6014] Unused sequential element reg14_reg was removed.  [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/new/radar_ctrl_loop.v:301]
+WARNING: [Synth 8-6014] Unused sequential element pif1D_data_reg was removed.  [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/sources_1/new/radar_ctrl_loop.v:306]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[31] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[30] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[29] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[28] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[27] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[26] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[25] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[24] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[23] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[22] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[21] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[20] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[19] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[18] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[17] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[16] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[15] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[14] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[13] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[12] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[11] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[10] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[9] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[8] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[7] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[6] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[5] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[4] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[3] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[2] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[1] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_doutb[0] in module radar_ctrl_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG3_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG2_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG1_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG0_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[31] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[30] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[29] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[28] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[27] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[26] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[25] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[24] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[23] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[22] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[21] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[20] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[19] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[18] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[17] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[16] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[15] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[14] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[13] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[12] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[11] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[10] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[9] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[8] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1817.352 ; gain = 1044.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1817.352 ; gain = 1044.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1817.352 ; gain = 1044.828
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.739 . Memory (MB): peak = 1817.352 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/x4_bd_processing_system7_0_0.xdc] for cell 'x4_bd_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/x4_bd_processing_system7_0_0.xdc] for cell 'x4_bd_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_processing_system7_0_0/x4_bd_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/x4_bd_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/x4_bd_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_1/bd_aabe_psr_aclk_0_board.xdc] for cell 'x4_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/bd_0/ip/ip_1/bd_aabe_psr_aclk_0_board.xdc] for cell 'x4_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/smartconnect.xdc] for cell 'x4_bd_i/axi_smc/inst'
+Finished Parsing XDC File [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_axi_smc_0/smartconnect.xdc] for cell 'x4_bd_i/axi_smc/inst'
+Parsing XDC File [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_rst_ps7_0_100M_0/x4_bd_rst_ps7_0_100M_0_board.xdc] for cell 'x4_bd_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/17392/x4_fpga_radar/x4_fpga_radar.gen/sources_1/bd/x4_bd/ip/x4_bd_rst_ps7_0_100M_0/x4_bd_rst_ps7_0_100M_0_board.xdc] for cell 'x4_bd_i/rst_ps7_0_100M/U0'
+Parsing XDC File [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/constrs_1/new/contraint.xdc]
+Finished Parsing XDC File [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/constrs_1/new/contraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.srcs/constrs_1/new/contraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/x4_bd_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/x4_bd_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/17392/x4_fpga_radar/x4_fpga_radar.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/x4_bd_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/x4_bd_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/x4_bd_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/x4_bd_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/x4_bd_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/x4_bd_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 23 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1932.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  FDR => FDRE: 1 instance 
+  MUXCY_L => MUXCY: 4 instances
+  SRL16 => SRL16E: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 1932.250 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1932.250 ; gain = 1159.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg400-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1932.250 ; gain = 1159.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1932.250 ; gain = 1159.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'arb_sm_cs_reg' in module 'sng_port_arb'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_WDATA_SM_NO_ECC_SNG_REG_WREADY.wr_data_sng_sm_cs_reg' in module 'wr_chnl'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg' in module 'rd_chnl'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg' in module 'rd_chnl'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_16_decerr_slave'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.w_state_reg' in module 'sc_mmu_v1_0_16_top'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.r_state_reg' in module 'sc_mmu_v1_0_16_top'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'aw_state_reg' in module 'sc_si_converter_v1_0_16_reduced_area'
+INFO: [Synth 8-802] inferred FSM for state register 'w_state_reg' in module 'sc_si_converter_v1_0_16_reduced_area'
+INFO: [Synth 8-802] inferred FSM for state register 'b_state_reg' in module 'sc_si_converter_v1_0_16_reduced_area'
+INFO: [Synth 8-802] inferred FSM for state register 'ar_state_reg' in module 'sc_si_converter_v1_0_16_reduced_area'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'sc_si_converter_v1_0_16_reduced_area'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_si_converter_v1_0_16_reduced_area'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'top_x4_pif_init_membridge'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'x4_spi_burst_reader'
+INFO: [Synth 8-802] inferred FSM for state register 't_st_reg' in module 'radar_ctrl_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                 wr_data |                               01 |                               10
+                 rd_data |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'arb_sm_cs_reg' using encoding 'sequential' in module 'sng_port_arb'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+            brst_wr_data |                              010 |                               10
+             sng_wr_data |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_WDATA_SM_NO_ECC_SNG_REG_WREADY.wr_data_sng_sm_cs_reg' using encoding 'one-hot' in module 'wr_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                sng_addr |                             0001 |                             0011
+                sec_addr |                             0010 |                             0100
+               full_pipe |                             0011 |                             0101
+           full_throttle |                             0100 |                             0110
+               last_addr |                             0101 |                             0111
+           last_throttle |                             0110 |                             1000
+               last_data |                             0111 |                             1001
+       last_data_ar_pend |                             1000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg' using encoding 'sequential' in module 'rd_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+          w8_throttle_b2 |                              001 |                              101
+             w8_throttle |                              010 |                              010
+        w8_2nd_last_data |                              011 |                              011
+            w8_last_data |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg' using encoding 'sequential' in module 'rd_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_16_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 W_STALL |                               01 | 00000000000000000000000000000001
+               W_PENDING |                               10 | 00000000000000000000000000000010
+                W_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.w_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_16_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 R_STALL |                               01 | 00000000000000000000000000000001
+               R_PENDING |                               10 | 00000000000000000000000000000010
+                R_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.r_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_16_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  B_IDLE |                               00 | 00000000000000000000000000000000
+                 B_ACCUM |                               01 | 00000000000000000000000000000001
+                  B_INCR |                               10 | 00000000000000000000000000000010
+                   B_OUT |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'b_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_16_reduced_area'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                           000001 | 00000000000000000000000000000000
+             W_SINGLES_1 |                           000010 | 00000000000000000000000000000001
+               W_SINGLES |                           000100 | 00000000000000000000000000000010
+                  W_NULL |                           001000 | 00000000000000000000000000000100
+                  W_INCR |                           010000 | 00000000000000000000000000000011
+              W_COMPLETE |                           100000 | 00000000000000000000000000000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'w_state_reg' using encoding 'one-hot' in module 'sc_si_converter_v1_0_16_reduced_area'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 AW_IDLE |                               00 | 00000000000000000000000000000000
+             AW_SINGLE_1 |                               01 | 00000000000000000000000000000010
+               AW_SINGLE |                               10 | 00000000000000000000000000000001
+                AW_BURST |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'aw_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_16_reduced_area'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                              000 | 00000000000000000000000000000000
+               R_SPLIT_1 |                              001 | 00000000000000000000000000000010
+                 R_SPLIT |                              010 | 00000000000000000000000000000001
+                  R_WAIT |                              011 | 00000000000000000000000000000101
+               R_SPLIT_2 |                              100 | 00000000000000000000000000000011
+                  R_INCR |                              101 | 00000000000000000000000000000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_16_reduced_area'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RD_IDLE |                                0 | 00000000000000000000000000000000
+                 RD_DATA |                                1 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_16_reduced_area'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 AR_IDLE |                               00 | 00000000000000000000000000000000
+               AR_SINGLE |                               01 | 00000000000000000000000000000001
+                AR_BURST |                               10 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ar_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_16_reduced_area'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              ST_WR_INIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 |                         00000000
+                ST_WR_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010 |                         00000001
+              ST_WR_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100 |                         00000010
+                ST_WR_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000 |                         00000011
+              ST_WR_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000 |                         00000100
+                ST_WR_13 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000 |                         00000101
+              ST_WR_13_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000 |                         00000110
+             ST_WR_17_01 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000 |                         00000111
+           ST_WR_17_01_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000 |                         00001000
+              ST_WR_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000 |                         00001001
+            ST_WR_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000 |                         00001010
+          ST_WR_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000 |                         00001011
+              ST_WR_NEXT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000 |                         00001100
+              ST_RD_INIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000 |                         00010100
+                ST_RD_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000 |                         00010101
+              ST_RD_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000 |                         00010110
+                ST_RD_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000 |                         00010111
+              ST_RD_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000 |                         00011000
+             ST_RD_17_02 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000 |                         00011001
+           ST_RD_17_02_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000 |                         00011010
+           ST_RD_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000 |                         00011011
+          ST_RD_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000 |                         00011100
+            ST_RD_15_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000 |                         00011101
+           ST_RD_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000 |                         00011110
+            ST_RD_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000 |                         00011111
+          ST_RD_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000 |                         00100000
+        ST_FLUSH_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000 |                         00100001
+       ST_FLUSH_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000 |                         00100010
+         ST_FLUSH_15_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000 |                         00100011
+        ST_FLUSH_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000 |                         00100100
+              ST_RD_NEXT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000 |                         00100101
+             ST_4A_WR_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 |                         00101000
+           ST_4A_WR_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000 |                         00101001
+             ST_4A_WR_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000 |                         00101010
+           ST_4A_WR_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000 |                         00101011
+          ST_4A_WR_13_02 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000 |                         00101100
+        ST_4A_WR_13_02_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000 |                         00101101
+          ST_4A_WR_17_01 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000 |                         00101110
+        ST_4A_WR_17_01_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000 |                         00101111
+           ST_4A_WR_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000 |                         00110000
+         ST_4A_WR_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000 |                         00110001
+       ST_4A_WR_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000 |                         00110010
+            ST_72A_RD_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000 |                         00111100
+          ST_72A_RD_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000 |                         00111101
+            ST_72A_RD_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000 |                         00111110
+          ST_72A_RD_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000 |                         00111111
+         ST_72A_RD_17_02 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000 |                         01000000
+       ST_72A_RD_17_02_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000 |                         01000001
+       ST_72A_RD_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000 |                         01000010
+      ST_72A_RD_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000 |                         01000011
+        ST_72A_RD_15_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000 |                         01000100
+       ST_72A_RD_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000 |                         01000101
+        ST_72A_RD_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000 |                         01000110
+      ST_72A_RD_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000 |                         01000111
+    ST_72A_FLUSH_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000 |                         01001000
+   ST_72A_FLUSH_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000 |                         01001001
+     ST_72A_FLUSH_15_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000 |                         01001010
+    ST_72A_FLUSH_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000 |                         01001011
+             ST_72A_NEXT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000 |                         01001100
+            ST_4A_WR2_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000 |                         01010000
+          ST_4A_WR2_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000 |                         01010001
+            ST_4A_WR2_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000 |                         01010010
+          ST_4A_WR2_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000 |                         01010011
+         ST_4A_WR2_13_22 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000 |                         01010100
+       ST_4A_WR2_13_22_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 |                         01010101
+         ST_4A_WR2_17_01 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000 |                         01010110
+       ST_4A_WR2_17_01_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000 |                         01010111
+          ST_4A_WR2_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000 |                         01011000
+        ST_4A_WR2_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000 |                         01011001
+      ST_4A_WR2_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000 |                         01011010
+            ST_4A_RD2_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000 |                         01011100
+          ST_4A_RD2_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000 |                         01011101
+            ST_4A_RD2_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000 |                         01011110
+          ST_4A_RD2_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000 |                         01011111
+         ST_4A_RD2_17_02 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000 |                         01100000
+       ST_4A_RD2_17_02_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01100001
+       ST_4A_RD2_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01100010
+      ST_4A_RD2_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01100011
+        ST_4A_RD2_15_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01100100
+       ST_4A_RD2_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01100101
+        ST_4A_RD2_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01100110
+      ST_4A_RD2_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01100111
+ ST_4A_RD2_FLUSH_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01101000
+ST_4A_RD2_FLUSH_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01101001
+  ST_4A_RD2_FLUSH_15_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01101010
+ ST_4A_RD2_FLUSH_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01101011
+          ST_4A_RD2_NEXT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01101100
+             ST_6A_WR_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01101110
+           ST_6A_WR_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01101111
+             ST_6A_WR_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01110000
+           ST_6A_WR_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01110001
+          ST_6A_WR_13_60 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01110010
+        ST_6A_WR_13_60_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01110011
+          ST_6A_WR_17_01 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01110100
+        ST_6A_WR_17_01_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01110101
+           ST_6A_WR_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01110110
+         ST_6A_WR_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01110111
+       ST_6A_WR_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111000
+            ST_72B_RD_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000010
+          ST_72B_RD_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000011
+            ST_72B_RD_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000100
+          ST_72B_RD_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000101
+         ST_72B_RD_17_02 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000110
+       ST_72B_RD_17_02_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000111
+       ST_72B_RD_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001000
+      ST_72B_RD_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001001
+        ST_72B_RD_15_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001010
+       ST_72B_RD_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001011
+        ST_72B_RD_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001100
+      ST_72B_RD_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001101
+    ST_72B_FLUSH_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001110
+   ST_72B_FLUSH_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001111
+     ST_72B_FLUSH_15_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010000
+    ST_72B_FLUSH_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010001
+             ST_72B_NEXT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010010
+             ST2_WR_INIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010110
+               ST2_WR_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010111
+             ST2_WR_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011000
+               ST2_WR_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011001
+             ST2_WR_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011010
+               ST2_WR_13 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011011
+             ST2_WR_13_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011100
+            ST2_WR_17_01 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011101
+          ST2_WR_17_01_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011110
+             ST2_WR_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011111
+           ST2_WR_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100000
+         ST2_WR_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100001
+             ST2_WR_NEXT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100010
+             ST2_RD_INIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10101010
+               ST2_RD_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10101011
+             ST2_RD_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10101100
+               ST2_RD_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10101101
+             ST2_RD_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10101110
+            ST2_RD_17_02 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10101111
+          ST2_RD_17_02_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10110000
+          ST2_RD_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10110001
+         ST2_RD_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10110010
+           ST2_RD_15_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10110011
+          ST2_RD_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10110100
+           ST2_RD_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10110101
+         ST2_RD_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10110110
+       ST2_FLUSH_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10110111
+      ST2_FLUSH_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10111000
+        ST2_FLUSH_15_CMD | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10111001
+       ST2_FLUSH_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10111010
+             ST2_RD_NEXT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10111011
+             ST3_WR_INIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10111110
+               ST3_WR_18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10111111
+             ST3_WR_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11000000
+               ST3_WR_19 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11000001
+             ST3_WR_19_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11000010
+               ST3_WR_13 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11000011
+             ST3_WR_13_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11000100
+            ST3_WR_17_01 | 000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11000101
+          ST3_WR_17_01_W | 000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11000110
+             ST3_WR_WAIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11000111
+           ST3_WR_17_CLR | 000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11001000
+         ST3_WR_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11001001
+             ST3_WR_NEXT | 000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11001010
+             ST3_RD_INIT | 000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11010010
+               ST3_RD_18 | 000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11010011
+             ST3_RD_18_W | 000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11010100
+               ST3_RD_19 | 000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11010101
+             ST3_RD_19_W | 000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11010110
+            ST3_RD_17_02 | 000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11010111
+          ST3_RD_17_02_W | 000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11011000
+          ST3_RD_P14_CMD | 000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11011001
+         ST3_RD_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11011010
+           ST3_RD_15_CMD | 000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11011011
+          ST3_RD_15_WAIT | 000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11011100
+           ST3_RD_17_CLR | 000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11011101
+         ST3_RD_17_CLR_W | 000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11011110
+       ST3_FLUSH_P14_CMD | 000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11011111
+      ST3_FLUSH_P14_WAIT | 000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11100000
+        ST3_FLUSH_15_CMD | 000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11100001
+       ST3_FLUSH_15_WAIT | 000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11100010
+             ST3_RD_NEXT | 000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11100011
+                ST4_INIT | 000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11100100
+               ST4_WR_18 | 000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11100101
+             ST4_WR_18_W | 000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11100110
+               ST4_WR_19 | 000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11100111
+             ST4_WR_19_W | 000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11101000
+               ST4_WR_13 | 000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11101001
+             ST4_WR_13_W | 000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11101010
+            ST4_WR_17_01 | 000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11101011
+          ST4_WR_17_01_W | 000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11101100
+             ST4_WR_WAIT | 000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11101101
+           ST4_WR_17_CLR | 000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11101110
+         ST4_WR_17_CLR_W | 000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11101111
+                ST5_INIT | 000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11110010
+              ST5_WR0_18 | 000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11110011
+            ST5_WR0_18_W | 000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11110100
+              ST5_WR0_19 | 000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11110101
+            ST5_WR0_19_W | 000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11110110
+              ST5_WR0_13 | 000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11110111
+            ST5_WR0_13_W | 000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11111000
+           ST5_WR0_17_01 | 000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11111001
+         ST5_WR0_17_01_W | 000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11111010
+            ST5_WR0_WAIT | 000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11111011
+          ST5_WR0_17_CLR | 000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11111100
+        ST5_WR0_17_CLR_W | 000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11111101
+            ST5_WR0_NEXT | 000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11111110
+              ST5_WR1_18 | 000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110011
+            ST5_WR1_18_W | 000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110100
+              ST5_WR1_19 | 000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110101
+            ST5_WR1_19_W | 000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110110
+              ST5_WR1_13 | 000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110111
+            ST5_WR1_13_W | 000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111000
+           ST5_WR1_17_01 | 000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111001
+         ST5_WR1_17_01_W | 000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111010
+            ST5_WR1_WAIT | 000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111011
+          ST5_WR1_17_CLR | 000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01001101
+        ST5_WR1_17_CLR_W | 000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01001110
+            ST5_WR1_NEXT | 000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01001111
+           ST5_POLL_INIT | 000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111001
+               ST5_RD_18 | 000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111010
+             ST5_RD_18_W | 000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111011
+               ST5_RD_19 | 000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111100
+             ST5_RD_19_W | 000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111101
+            ST5_RD_17_02 | 000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111110
+          ST5_RD_17_02_W | 000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111111
+          ST5_RD_P14_CMD | 000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000000
+         ST5_RD_P14_WAIT | 000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000001
+           ST5_RD_15_CMD | 000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010011
+          ST5_RD_15_WAIT | 000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010100
+           ST5_RD_17_CLR | 000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010101
+         ST5_RD_17_CLR_W | 000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100011
+       ST5_FLUSH_P14_CMD | 000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100100
+      ST5_FLUSH_P14_WAIT | 000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100101
+        ST5_FLUSH_15_CMD | 000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100110
+       ST5_FLUSH_15_WAIT | 000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100111
+                ST5_NEXT | 001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10101000
+                 ST_DONE | 010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11110000
+                  ST_ERR | 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11110001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'one-hot' in module 'top_x4_pif_init_membridge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                               00
+                  ST_CMD |                               01 |                               01
+                 ST_DATA |                               10 |                               10
+                  ST_END |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'x4_spi_burst_reader'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  T_IDLE | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 |                         00000000
+             T_WAIT_INIT | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010 |                         00000001
+               T_WR2B_18 | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100 |                         00001010
+             T_WR2B_18_W | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000 |                         00001011
+               T_WR2B_19 | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000 |                         00001100
+             T_WR2B_19_W | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000 |                         00001101
+               T_WR2B_13 | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000 |                         00001110
+             T_WR2B_13_W | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000 |                         00001111
+            T_WR2B_17_01 | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000 |                         00010000
+          T_WR2B_17_01_W | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000 |                         00010001
+             T_WR2B_WAIT | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000 |                         00010010
+            T_WR2B_17_00 | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000 |                         00010011
+          T_WR2B_17_00_W | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000 |                         00010100
+               T_WR36_18 | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000 |                         00011110
+             T_WR36_18_W | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000 |                         00011111
+               T_WR36_19 | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000 |                         00100000
+             T_WR36_19_W | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000 |                         00100001
+               T_WR36_13 | 00000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000 |                         00100010
+             T_WR36_13_W | 00000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000 |                         00100011
+            T_WR36_17_01 | 00000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000 |                         00100100
+          T_WR36_17_01_W | 00000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000 |                         00100101
+             T_WR36_WAIT | 00000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000 |                         00100110
+            T_WR36_17_00 | 00000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000 |                         00100111
+          T_WR36_17_00_W | 00000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000 |                         00101000
+               T_RD3A_18 | 00000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000 |                         00110010
+             T_RD3A_18_W | 00000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000 |                         00110011
+               T_RD3A_19 | 00000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000 |                         00110100
+             T_RD3A_19_W | 00000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000 |                         00110101
+            T_RD3A_17_02 | 00000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000 |                         00110110
+          T_RD3A_17_02_W | 00000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000 |                         00110111
+          T_RD3A_P14_CMD | 00000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000 |                         00111000
+         T_RD3A_P14_WAIT | 00000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 |                         00111001
+           T_RD3A_15_CMD | 00000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000 |                         00111010
+          T_RD3A_15_WAIT | 00000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000 |                         00111011
+            T_RD3A_17_00 | 00000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000 |                         00111100
+          T_RD3A_17_00_W | 00000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000 |                         00111101
+         T_FLUSH_P14_CMD | 00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000 |                         00111110
+        T_FLUSH_P14_WAIT | 00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000 |                         00111111
+          T_FLUSH_15_CMD | 00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000 |                         01000000
+         T_FLUSH_15_WAIT | 00000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000 |                         01000001
+            T_CHECK_DONE | 00000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000 |                         01000010
+               T_RD27_18 | 00000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000 |                         01000110
+             T_RD27_18_W | 00000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000 |                         01000111
+               T_RD27_19 | 00000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000 |                         01001000
+             T_RD27_19_W | 00000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000 |                         01001001
+            T_RD27_17_02 | 00000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000 |                         01001010
+          T_RD27_17_02_W | 00000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000 |                         01001011
+          T_RD27_P14_CMD | 00000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000 |                         01001100
+         T_RD27_P14_WAIT | 00000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000 |                         01001101
+           T_RD27_15_CMD | 00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000 |                         01001110
+          T_RD27_15_WAIT | 00000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000 |                         01001111
+            T_RD27_17_00 | 00000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000 |                         01010000
+          T_RD27_17_00_W | 00000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000 |                         01010001
+    T_RD27_FLUSH_P14_CMD | 00000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000 |                         01010010
+   T_RD27_FLUSH_P14_WAIT | 00000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000 |                         01010011
+     T_RD27_FLUSH_15_CMD | 00000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000 |                         01010100
+    T_RD27_FLUSH_15_WAIT | 00000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000 |                         01010101
+         T_RD27_MAKE_NEW | 00000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000 |                         01010110
+               T_WR27_18 | 00000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000 |                         01011010
+             T_WR27_18_W | 00000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000 |                         01011011
+               T_WR27_19 | 00000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000 |                         01011100
+             T_WR27_19_W | 00000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000 |                         01011101
+               T_WR27_13 | 00000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000 |                         01011110
+             T_WR27_13_W | 00000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000 |                         01011111
+            T_WR27_17_01 | 00000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 |                         01100000
+          T_WR27_17_01_W | 00000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000 |                         01100001
+             T_WR27_WAIT | 00000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000 |                         01100010
+            T_WR27_17_00 | 00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000 |                         01100011
+          T_WR27_17_00_W | 00000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000 |                         01100100
+               T_WR1D_18 | 00000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000 |                         10000010
+             T_WR1D_18_W | 00000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000 |                         10000011
+               T_WR1D_19 | 00000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000 |                         10000100
+             T_WR1D_19_W | 00000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000101
+               T_WR1D_13 | 00000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000110
+             T_WR1D_13_W | 00000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000111
+            T_WR1D_17_01 | 00000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001000
+          T_WR1D_17_01_W | 00000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001001
+             T_WR1D_WAIT | 00000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001010
+            T_WR1D_17_00 | 00000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001011
+          T_WR1D_17_00_W | 00000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001100
+               T_RD1D_18 | 00000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010110
+             T_RD1D_18_W | 00000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010111
+               T_RD1D_19 | 00000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011000
+             T_RD1D_19_W | 00000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011001
+            T_RD1D_17_02 | 00000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011010
+          T_RD1D_17_02_W | 00000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011011
+          T_RD1D_P14_CMD | 00000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011100
+         T_RD1D_P14_WAIT | 00000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011101
+           T_RD1D_15_CMD | 00000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011110
+          T_RD1D_15_WAIT | 00000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011111
+            T_RD1D_17_00 | 00000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100000
+          T_RD1D_17_00_W | 00000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100001
+    T_RD1D_FLUSH_P14_CMD | 00000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100010
+   T_RD1D_FLUSH_P14_WAIT | 00000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100011
+     T_RD1D_FLUSH_15_CMD | 00000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100100
+    T_RD1D_FLUSH_15_WAIT | 00000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100101
+             T_RD1D_DONE | 00001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100110
+           T_START_BURST | 00010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01101110
+            T_WAIT_BURST | 00100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01101111
+                  T_LOOP | 01000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111000
+                   T_ERR | 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         11111111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 't_st_reg' using encoding 'one-hot' in module 'radar_ctrl_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1932.250 ; gain = 1159.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/Data_Exists_DFF) is unused and will be removed from module x4_bd_axi_bram_ctrl_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/Addr_Counters[0].FDRE_I) is unused and will be removed from module x4_bd_axi_bram_ctrl_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/Addr_Counters[1].FDRE_I) is unused and will be removed from module x4_bd_axi_bram_ctrl_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/Addr_Counters[2].FDRE_I) is unused and will be removed from module x4_bd_axi_bram_ctrl_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/Addr_Counters[3].FDRE_I) is unused and will be removed from module x4_bd_axi_bram_ctrl_0_0.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module bd_aabe.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_aabe.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_aabe.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_aabe.
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1932.250 ; gain = 1159.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 2019.543 ; gain = 1247.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 2118.242 ; gain = 1345.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2124.062 ; gain = 1351.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 2301.492 ; gain = 1528.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 2301.492 ; gain = 1528.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 2301.492 ; gain = 1528.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 2301.492 ; gain = 1528.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 2301.492 ; gain = 1528.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 2301.492 ; gain = 1528.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BIBUF    |   130|
+|2     |BUFG     |     1|
+|3     |CARRY4   |    67|
+|4     |LUT1     |   144|
+|5     |LUT2     |   494|
+|6     |LUT3     |   438|
+|7     |LUT4     |   351|
+|8     |LUT5     |   357|
+|9     |LUT6     |   730|
+|10    |MUXF7    |     4|
+|11    |PS7      |     1|
+|12    |RAM32M   |    21|
+|13    |RAM32X1D |     2|
+|14    |RAMB36E1 |     4|
+|15    |SRL16    |     2|
+|16    |SRL16E   |    34|
+|17    |SRLC32E  |     9|
+|18    |FDCE     |  1034|
+|19    |FDPE     |     5|
+|20    |FDRE     |  1320|
+|21    |FDSE     |    52|
+|22    |IBUF     |     1|
+|23    |OBUF     |     3|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 2301.492 ; gain = 1528.969
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15166 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:59 . Memory (MB): peak = 2301.492 ; gain = 1414.070
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 2301.492 ; gain = 1528.969
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 2306.645 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2314.305 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 25 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 21 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  SRL16 => SRL16E: 2 instances
+
+Synth Design complete | Checksum: 6fb016a9
+INFO: [Common 17-83] Releasing license: Synthesis
+285 Infos, 144 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 2314.305 ; gain = 1754.035
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2314.305 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/17392/x4_fpga_radar/x4_fpga_radar.runs/synth_1/x4_bd_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file x4_bd_wrapper_utilization_synth.rpt -pb x4_bd_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  9 20:23:04 2026...

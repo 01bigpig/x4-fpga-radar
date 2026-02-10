@@ -1,0 +1,38 @@
+﻿# Vivado generated
+*.jou
+*.log
+*.str
+*.tmp
+*.cache
+.Xil/
+.cache/
+.hw/
+.runs/
+.sim/
+.ip_user_files/
+**/.Xil/
+**/.cache/
+**/.hw/
+**/.runs/
+**/.sim/
+**/ip_user_files/
+
+# Bitstreams / exports (optional)
+*.bit
+*.bin
+*.mcs
+*.ltx
+
+# Vitis/SDK (if any)
+.vitis/
+.sdk/
+*.elf
+*.map
+Debug/
+Release/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
